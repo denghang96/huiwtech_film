@@ -1,0 +1,42 @@
+2020-02-23 12:58:12.093  INFO 5744 --- [main] com.huiwtech.film.FilmApplicationTests   : Starting FilmApplicationTests on DESKTOP-D0C8O3T with PID 5744 (started by denghang in G:\film_workspace_film\film_parent)
+2020-02-23 12:58:12.097  INFO 5744 --- [main] com.huiwtech.film.FilmApplicationTests   : No active profile set, falling back to default profiles: default
+2020-02-23 12:58:13.366  WARN 5744 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.huiwtech.film]' package. Please check your configuration.
+2020-02-23 12:58:14.810  INFO 5744 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 12:58:15.788  INFO 5744 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-02-23 12:58:16.259  INFO 5744 --- [main] com.huiwtech.film.FilmApplicationTests   : Started FilmApplicationTests in 5.339 seconds (JVM running for 6.966)
+2020-02-23 12:58:16.771  INFO 5744 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-23 12:58:16.778  INFO 5744 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-02-23 13:00:45.764  INFO 13200 --- [main] com.huiwtech.film.FilmApplicationTests   : Starting FilmApplicationTests on DESKTOP-D0C8O3T with PID 13200 (started by denghang in G:\film_workspace_film\film_parent)
+2020-02-23 13:00:45.766  INFO 13200 --- [main] com.huiwtech.film.FilmApplicationTests   : No active profile set, falling back to default profiles: default
+2020-02-23 13:00:47.780  WARN 13200 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.huiwtech.film]' package. Please check your configuration.
+2020-02-23 13:00:48.886  INFO 13200 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 13:00:49.845  INFO 13200 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-02-23 13:00:50.300  INFO 13200 --- [main] com.huiwtech.film.FilmApplicationTests   : Started FilmApplicationTests in 5.287 seconds (JVM running for 6.611)
+2020-02-23 13:00:50.886  INFO 13200 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-23 13:00:50.892  INFO 13200 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-02-23 17:07:47.561  INFO 13284 --- [main] com.huiwtech.film.FilmApplicationTests   : Starting FilmApplicationTests on DESKTOP-D0C8O3T with PID 13284 (started by denghang in G:\film_workspace_film\film_parent)
+2020-02-23 17:07:47.574  INFO 13284 --- [main] com.huiwtech.film.FilmApplicationTests   : No active profile set, falling back to default profiles: default
+2020-02-23 17:07:49.017  WARN 13284 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.huiwtech.film]' package. Please check your configuration.
+2020-02-23 17:07:50.904  INFO 13284 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 17:07:52.149  INFO 13284 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-02-23 17:07:52.626  INFO 13284 --- [main] com.huiwtech.film.FilmApplicationTests   : Started FilmApplicationTests in 6.278 seconds (JVM running for 8.303)
+2020-02-23 17:07:53.439  INFO 13284 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-23 17:07:53.445  INFO 13284 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-02-23 17:57:33.013  INFO 1900 --- [restartedMain] com.huiwtech.film.FilmApplication        : Starting FilmApplication on DESKTOP-D0C8O3T with PID 1900 (G:\film_workspace_film\film_parent\target\classes started by denghang in G:\film_workspace_film\film_parent)
+2020-02-23 17:57:33.016  INFO 1900 --- [restartedMain] com.huiwtech.film.FilmApplication        : No active profile set, falling back to default profiles: default
+2020-02-23 17:57:33.065  INFO 1900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-23 17:57:33.065  INFO 1900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-23 17:57:33.618  WARN 1900 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.huiwtech.film]' package. Please check your configuration.
+2020-02-23 17:57:34.051  INFO 1900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-23 17:57:34.067  INFO 1900 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-23 17:57:34.067  INFO 1900 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-23 17:57:34.145  INFO 1900 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-23 17:57:34.145  INFO 1900 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1080 ms
+2020-02-23 17:57:34.354  INFO 1900 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-23 17:57:34.756  INFO 1900 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-02-23 17:57:34.915  INFO 1900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-23 17:57:35.231  INFO 1900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-23 17:57:35.233  INFO 1900 --- [restartedMain] com.huiwtech.film.FilmApplication        : Started FilmApplication in 2.745 seconds (JVM running for 4.251)
+2020-02-23 17:58:28.820  INFO 1900 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-23 17:58:28.820  INFO 1900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-23 17:58:28.826  INFO 1900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
