@@ -18,6 +18,6 @@ spring:
 
 logging:
   level.root: info
-  level.com.next.jiangzh: debug
+  level.com.huiwtech: debug
   path: logs/
   file: next-film.log

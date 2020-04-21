@@ -1,4 +1,4 @@
-package com.huiwtech.film.example.dao.entity;
+package com.huiwtech.film.dao.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -8,8 +8,8 @@ import java.io.Serializable;
  * 
  * </p>
  *
- * @author denghang
- * @since 2020-02-23
+ * @author jiangzh
+ * @since 2019-03-12
  */
 public class NextUser extends Model<NextUser> {
 

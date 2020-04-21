@@ -22,21 +22,22 @@ public class EntityGenerator {
     // 生成输出目录，定位到工程的java目录下
     private String outputDir = "G:\\film_workspace_film\\film_parent\\src\\main\\java";
     // 生成类的作者
-    private String author = "denghang";
+    private String author = "jiangzh";
     // 数据源相关配置
     private String url = "jdbc:mysql://127.0.0.1:3306/next_film?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC";
-    private String driverName = "com.mysql.cj.jdbc.Driver";//8
-    //private String driverName = "com.mysql.jdbc.Driver";
+    private String driverName = "com.mysql.cj.jdbc.Driver";
     private String userName = "root";
     private String userPwd = "123456";
     // DAO的包路径
-    private String daoPackage = "com.huiwtech.film.example.dao";
+    private String daoPackage = "com.huiwtech.film.dao";
     // 待生成的表名，注意是覆盖更新
     private static String[] tableNames;
 
     static{
         tableNames = new String[]{
-                "next_user"
+                "film_brand_dict_t","film_area_dict_t",
+                "film_hall_dict_t","film_cinema_t",
+                "film_field_t","film_hall_film_info_t",
         };
     }
 

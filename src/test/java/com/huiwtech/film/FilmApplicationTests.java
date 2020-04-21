@@ -1,9 +1,9 @@
 package com.huiwtech.film;
 
+import com.huiwtech.film.dao.entity.NextUser;
+import com.huiwtech.film.dao.mapper.NextUserMapper;
 import com.huiwtech.film.example.dao.UserMapper;
-import com.huiwtech.film.example.dao.entity.NextUser;
 import com.huiwtech.film.example.dao.entity.User;
-import com.huiwtech.film.example.dao.mapper.NextUserMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,6 @@ public class FilmApplicationTests {
 	@Test
 	public void hell() {
 		List<User> users = userMapper.selectList(null);
-
 		users.forEach(System.out::println);
 	}
 
