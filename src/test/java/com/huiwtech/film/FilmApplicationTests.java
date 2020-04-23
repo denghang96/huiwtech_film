@@ -3,7 +3,7 @@ package com.huiwtech.film;
 import com.huiwtech.film.dao.entity.NextUser;
 import com.huiwtech.film.dao.mapper.NextUserMapper;
 import com.huiwtech.film.example.dao.UserMapper;
-import com.huiwtech.film.example.dao.entity.User;
+import lombok.Data;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +12,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 public class FilmApplicationTests {
 
 	@Autowired
@@ -28,8 +28,6 @@ public class FilmApplicationTests {
 
 	@Test
 	public void hell() {
-		List<User> users = userMapper.selectList(null);
-		users.forEach(System.out::println);
 	}
 
 	@Test
@@ -38,4 +36,5 @@ public class FilmApplicationTests {
 
 		nextUsers.forEach(System.out::println);
 	}
+
 }
