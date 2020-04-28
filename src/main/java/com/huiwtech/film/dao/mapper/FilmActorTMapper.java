@@ -1,5 +1,6 @@
 package com.huiwtech.film.dao.mapper;
 
+import com.huiwtech.film.controller.film.vo.response.filmdetail.ActorResultVO;
 import com.huiwtech.film.dao.entity.FilmActorT;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
