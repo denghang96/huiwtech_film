@@ -16,6 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<mybatis.plus.version>3.1.0</mybatis.plus.version>
 	</properties>
 
 	<dependencies>
@@ -127,6 +128,20 @@
 			<artifactId>byte-buddy</artifactId>
 			<version>1.8.12</version>
 		</dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>20.0</version>
+		</dependency>
+
 
 	</dependencies>
 

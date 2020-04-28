@@ -1,7 +1,9 @@
 package com.huiwtech.film.dao.mapper;
 
 
+import com.huiwtech.film.controller.cinema.vo.CinemaFilmInfoVO;
 import com.huiwtech.film.controller.cinema.vo.CinemaFilmVo;
+import com.huiwtech.film.controller.cinema.vo.FieldHallInfoVO;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,4 +26,15 @@ public class FilmFieldTMapperTest {
         System.out.println(cinemaFilmVOS);
     }
 
+    @Test
+    public void describeFilmInfoTest(){
+        CinemaFilmInfoVO cinemaFilmInfoVO = filmFieldTMapper.describeFilmInfoByFieldId("1");
+        System.out.println(cinemaFilmInfoVO);
+    }
+
+    @Test
+    public void describeHallInfoTest(){
+        FieldHallInfoVO fieldHallInfoVO = filmFieldTMapper.describeHallInfo("1");
+        System.out.println(fieldHallInfoVO);
+    }
 }

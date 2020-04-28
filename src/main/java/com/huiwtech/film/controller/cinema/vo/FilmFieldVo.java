@@ -8,6 +8,7 @@ import java.io.Serializable;
 public class FilmFieldVo implements Serializable {
     private String fieldId;
     private String beginTime;
+    private String endTime;
     private String language;
     private String hallName;
     private String price;

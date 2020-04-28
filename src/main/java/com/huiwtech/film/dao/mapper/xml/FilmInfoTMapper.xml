@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huiwtech.film.dao.mapper.FilmInfoTMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.huiwtech.film.dao.entity.FilmInfoT">
+        <id column="UUID" property="uuid" />
+        <result column="film_name" property="filmName" />
+        <result column="film_type" property="filmType" />
+        <result column="img_address" property="imgAddress" />
+        <result column="film_score" property="filmScore" />
+        <result column="film_preSaleNum" property="filmPresalenum" />
+        <result column="film_box_office" property="filmBoxOffice" />
+        <result column="film_source" property="filmSource" />
+        <result column="film_cats" property="filmCats" />
+        <result column="film_area" property="filmArea" />
+        <result column="film_date" property="filmDate" />
+        <result column="film_time" property="filmTime" />
+        <result column="film_status" property="filmStatus" />
+    </resultMap>
+
+    <select id="describeFilmDetailByFilmId" parameterType="java.util.Map" resultType="com.next.jiangzh.film.controller.film.vo.response.filmdetail.FilmDetailResultVO">
+        SELECT
+            info.`uuid` AS filmId,
+            info.`film_name` AS filmName,
+            detail.`film_en_name` AS filmEnName,
+            info.`img_address` AS imgAddress,
+            detail.`film_score` AS score,
+            detail.`film_score_num` AS scoreNum,
+            info.`film_box_office` AS totalBox,
+            (SELECT GROUP_CONCAT(show_name SEPARATOR ',')
+            FROM film_cat_dict_t cat
+            WHERE FIND_IN_SET (cat.`UUID`,(
+            SELECT
+            REPLACE(TRIM(BOTH '#' FROM film.film_cats),'#',',')
+            FROM film_info_t film WHERE film.`UUID` = info.uuid
+            ))) AS info01,
+            CONCAT((SELECT show_name FROM film_source_dict_t source WHERE source.uuid = info.`film_source`),' / ',detail.`film_length`,' 分钟') AS info02,
+            CONCAT(info.`film_time`,' 大陆上映') AS info03
+        FROM
+            film_info_t info LEFT JOIN film_detail_t detail ON info.`UUID` = detail.`film_id`
+        WHERE info.`UUID` = #{filmId};
+    </select>
+
+    <select id="describeFilmDetailByFilmName" parameterType="java.util.Map" resultType="com.next.jiangzh.film.controller.film.vo.response.filmdetail.FilmDetailResultVO">
+        SELECT
+            info.`uuid` AS filmId,
+            info.`film_name` AS filmName,
+            detail.`film_en_name` AS filmEnName,
+            info.`img_address` AS imgAddress,
+            detail.`film_score` AS score,
+            detail.`film_score_num` AS scoreNum,
+            info.`film_box_office` AS totalBox,
+            (SELECT GROUP_CONCAT(show_name SEPARATOR ',')
+            FROM film_cat_dict_t cat
+            WHERE FIND_IN_SET (cat.`UUID`,(
+            SELECT
+            REPLACE(TRIM(BOTH '#' FROM film.film_cats),'#',',')
+            FROM film_info_t film WHERE film.`UUID` = info.uuid
+            ))) AS info01,
+            CONCAT((SELECT show_name FROM film_source_dict_t source WHERE source.uuid = info.`film_source`),' / ',detail.`film_length`,' 分钟') AS info02,
+            CONCAT(info.`film_time`,' 大陆上映') AS info03
+        FROM
+            film_info_t info LEFT JOIN film_detail_t detail ON info.`UUID` = detail.`film_id`
+        WHERE info.film_name LIKE CONCAT('%',#{filmName},'%');
+    </select>
+
+</mapper>
