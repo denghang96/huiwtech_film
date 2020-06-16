@@ -28,7 +28,7 @@ public class FilmFieldTMapperTest {
 
     @Test
     public void describeFilmInfoTest(){
-        CinemaFilmInfoVO cinemaFilmInfoVO = filmFieldTMapper.describeFilmInfoByFieldId("1");
+        CinemaFilmVo cinemaFilmInfoVO = filmFieldTMapper.describeFilmInfoByFieldId("1");
         System.out.println(cinemaFilmInfoVO);
     }
 

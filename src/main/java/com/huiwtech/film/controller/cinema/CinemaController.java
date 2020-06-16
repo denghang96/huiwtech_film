@@ -58,11 +58,11 @@ public class CinemaController {
         // 获取逻辑层调用结果
         CinemaDetailVO cinemaDetailVO = cinemaServiceAPI.describeCinemaDetails(requestVO.getCinemaId());
         FieldHallInfoVO fieldHallInfoVO = cinemaServiceAPI.describeHallInfoByFieldId(requestVO.getFieldId());
-        CinemaFilmInfoVO cinemaFilmInfoVO = cinemaServiceAPI.describeFilmInfoByFieldId(requestVO.getFieldId());
+        CinemaFilmVo cinemaFilmVo = cinemaServiceAPI.describeFilmInfoByFieldId(requestVO.getFieldId());
 
         // 组织返回参数
         Map<String,Object> result = Maps.newHashMap();
-        result.put("filmInfo",cinemaFilmInfoVO);
+        result.put("filmInfo",cinemaFilmVo);
         result.put("cinemaInfo",cinemaDetailVO);
         result.put("hallInfo",fieldHallInfoVO);
 

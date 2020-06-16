@@ -39,7 +39,7 @@ public interface CinemaServiceAPI {
     /*
         根据场次编号，获取电影信息
      */
-    CinemaFilmInfoVO describeFilmInfoByFieldId(String fieldId);
+    CinemaFilmVo describeFilmInfoByFieldId(String fieldId);
 
     /*
         根据场次编号，获取放映厅信息

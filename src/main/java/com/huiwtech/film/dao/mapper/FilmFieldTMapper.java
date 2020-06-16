@@ -20,7 +20,7 @@ public interface FilmFieldTMapper extends BaseMapper<FilmFieldT> {
 
     List<CinemaFilmVo> describeFieldList(@Param("cinemaId")String cinemaId);
 
-    CinemaFilmInfoVO describeFilmInfoByFieldId(@Param("fieldId")String fieldId);
+    CinemaFilmVo describeFilmInfoByFieldId(@Param("fieldId")String fieldId);
 
     FieldHallInfoVO describeHallInfo(@Param("fieldId")String fieldId);
 

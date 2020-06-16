@@ -23,4 +23,8 @@ logging:
   file: next-film.log
 
 film:
-  img-pre: http://img.nextfilm.cn/
+  img-pre: http://img.dengooo.cn/
+
+order:
+  file-path-pre : G:/imags/
+  alipay-callback-path : http://dengooo.natapp1.cc/order/alipay/callback

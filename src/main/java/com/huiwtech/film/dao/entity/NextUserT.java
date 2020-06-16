@@ -2,8 +2,12 @@ package com.huiwtech.film.dao.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
+import lombok.Data;
+
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import java.util.Date;
+
 /**
  * <p>
  * 用户表
@@ -12,6 +16,7 @@ import java.io.Serializable;
  * @author jiangzh
  * @since 2019-03-20
  */
+@Data
 public class NextUserT extends Model<NextUserT> {
 
     private static final long serialVersionUID = 1L;
@@ -80,147 +85,19 @@ public class NextUserT extends Model<NextUserT> {
     /**
      * 创建时间
      */
-    private LocalDateTime beginTime;
+    private Date beginTime;
 
     /**
      * 修改时间
      */
-    private LocalDateTime updateTime;
+    private Date updateTime;
 
-    public Integer getUuid() {
-        return uuid;
-    }
 
-    public void setUuid(Integer uuid) {
-        this.uuid = uuid;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getUserPwd() {
-        return userPwd;
-    }
-
-    public void setUserPwd(String userPwd) {
-        this.userPwd = userPwd;
-    }
-
-    public String getNickName() {
-        return nickName;
-    }
-
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
-    }
-
-    public Integer getSex() {
-        return sex;
-    }
-
-    public void setSex(Integer sex) {
-        this.sex = sex;
-    }
-
-    public String getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(String birthday) {
-        this.birthday = birthday;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getHeadAddress() {
-        return headAddress;
-    }
-
-    public void setHeadAddress(String headAddress) {
-        this.headAddress = headAddress;
-    }
-
-    public String getBiography() {
-        return biography;
-    }
-
-    public void setBiography(String biography) {
-        this.biography = biography;
-    }
-
-    public Integer getLifeState() {
-        return lifeState;
-    }
-
-    public void setLifeState(Integer lifeState) {
-        this.lifeState = lifeState;
-    }
-
-    public LocalDateTime getBeginTime() {
-        return beginTime;
-    }
-
-    public void setBeginTime(LocalDateTime beginTime) {
-        this.beginTime = beginTime;
-    }
-
-    public LocalDateTime getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(LocalDateTime updateTime) {
-        this.updateTime = updateTime;
-    }
 
     @Override
     protected Serializable pkVal() {
         return null;
     }
 
-    @Override
-    public String toString() {
-        return "NextUserT{" +
-        ", uuid=" + uuid +
-        ", userName=" + userName +
-        ", userPwd=" + userPwd +
-        ", nickName=" + nickName +
-        ", sex=" + sex +
-        ", birthday=" + birthday +
-        ", email=" + email +
-        ", phone=" + phone +
-        ", address=" + address +
-        ", headAddress=" + headAddress +
-        ", biography=" + biography +
-        ", lifeState=" + lifeState +
-        ", beginTime=" + beginTime +
-        ", updateTime=" + updateTime +
-        "}";
-    }
+
 }

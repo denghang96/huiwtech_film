@@ -20,6 +20,8 @@ import com.huiwtech.film.controller.film.vo.response.index.SoonFilmListResultVO;
 import com.huiwtech.film.dao.entity.*;
 import com.huiwtech.film.dao.mapper.*;
 import com.huiwtech.film.service.common.exception.CommonServiceExcetion;
+import org.apache.commons.lang.time.DateFormatUtils;
+import org.apache.commons.lang.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -121,7 +123,7 @@ public class FilmServiceImpl implements FilmServiceAPI{
             vo.setFilmId(film.getUuid()+"");
             vo.setExpectNum(film.getFilmPresalenum()+"");
 
-            vo.setShowTime(localTime2Str(film.getFilmTime()));
+            vo.setShowTime(DateFormatUtils.format(film.getFilmTime(),"YYYY-MM-dd"));
 
             results.add(vo);
         });

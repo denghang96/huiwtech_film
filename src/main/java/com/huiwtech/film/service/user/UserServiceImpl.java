@@ -8,12 +8,14 @@ import com.huiwtech.film.controller.user.vo.UserInfoVO;
 import com.huiwtech.film.dao.entity.NextUserT;
 import com.huiwtech.film.dao.mapper.NextUserTMapper;
 import com.huiwtech.film.service.common.exception.CommonServiceExcetion;
+import org.apache.commons.lang.time.DateUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -115,8 +117,8 @@ public class UserServiceImpl implements UserServiceAPI{
         userInfoVO.setUsername(nextUserT.getUserName());
         userInfoVO.setNickname(nextUserT.getNickName());
 
-        userInfoVO.setBeginTime(nextUserT.getBeginTime().toEpochSecond(ZoneOffset.of("+8")));
-        userInfoVO.setUpdateTime(nextUserT.getUpdateTime().toEpochSecond(ZoneOffset.of("+8")));
+        userInfoVO.setBeginTime(nextUserT.getBeginTime().getTime());
+        userInfoVO.setUpdateTime(nextUserT.getUpdateTime().getTime());
 
         userInfoVO.setLifeState(nextUserT.getLifeState()+"");
 
@@ -131,7 +133,7 @@ public class UserServiceImpl implements UserServiceAPI{
         nextUserT.setUserName(userInfoVO.getUsername());
         nextUserT.setNickName(userInfoVO.getNickname());
 
-        nextUserT.setUpdateTime(LocalDateTime.now());
+        nextUserT.setUpdateTime(new Date());
         // 最好是用正则表达式判断是否为数字类型之后再转换
         if(Optional.ofNullable(userInfoVO.getLifeState()).isPresent()){
             nextUserT.setLifeState(Integer.parseInt(userInfoVO.getLifeState()));

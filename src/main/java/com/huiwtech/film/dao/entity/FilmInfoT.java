@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
+import java.util.Date;
+
 /**
  * <p>
  * 影片主表
@@ -77,7 +79,7 @@ public class FilmInfoT extends Model<FilmInfoT> {
     /**
      * 影片上映时间
      */
-    private LocalDateTime filmTime;
+    private Date filmTime;
 
     /**
      * 影片状态,1-正在热映，2-即将上映，3-经典影片
@@ -172,11 +174,11 @@ public class FilmInfoT extends Model<FilmInfoT> {
         this.filmDate = filmDate;
     }
 
-    public LocalDateTime getFilmTime() {
+    public Date getFilmTime() {
         return filmTime;
     }
 
-    public void setFilmTime(LocalDateTime filmTime) {
+    public void setFilmTime(Date filmTime) {
         this.filmTime = filmTime;
     }
 
